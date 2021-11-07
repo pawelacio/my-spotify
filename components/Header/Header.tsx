@@ -1,5 +1,6 @@
-import { BsSpotify } from "react-icons/bs";
-import { FiMoreHorizontal } from "react-icons/fi"
+import { FC } from 'react';
+import { BsSpotify } from 'react-icons/bs';
+import { FiMoreHorizontal } from 'react-icons/fi'
 
 import {
   HeaderWrapperStyled,
@@ -15,7 +16,7 @@ import {
   UsernameStyled
 } from './HeaderStyled';
 
-const Header = () => {
+const Header:FC = () => {
   return (
     <HeaderWrapperStyled>
       <SectionLeftStyled>

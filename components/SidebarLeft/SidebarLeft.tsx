@@ -1,11 +1,10 @@
-import { BsSpotify } from "react-icons/bs";
-import { FiMoreHorizontal } from "react-icons/fi"
+import { FC } from 'react';
 
 import {
   SidebarLeftWrapperStyled,
 } from './SidebarLeftStyled';
 
-const SidebarLeft = () => {
+const SidebarLeft:FC = () => {
   return (
     <SidebarLeftWrapperStyled>
       Sidebarleft

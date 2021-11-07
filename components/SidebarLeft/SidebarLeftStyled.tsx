@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { mainColor } from "../../styles/variables";
+import { mainColor, secondaryColor } from "../../styles/variables";
 
-export const SidebarLeftWrapperStyled = styled.header`
+export const SidebarLeftWrapperStyled = styled.div`
   position: relative;
   background-color: ${ mainColor };
-
+  width: 240px;
 `;
 
 export const SectionLeftStyled = styled.div`

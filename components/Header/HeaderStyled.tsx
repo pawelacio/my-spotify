@@ -1,14 +1,16 @@
 import styled from "styled-components";
-import { mainColor } from "../../styles/variables";
+import { mainColor, textColor } from "../../styles/variables";
+
 export const HeaderWrapperStyled = styled.header`
   position: relative;
   height: 100px;
-  padding: 32px;
+  padding: 32px 48px 32px 32px;
   background-color: ${ mainColor };
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #ffffff;
+  color: ${ textColor };
 `;
 
 export const SectionLeftStyled = styled.div`
@@ -18,6 +20,7 @@ export const SectionLeftStyled = styled.div`
 `;
 
 export const LogoWrapperStyled = styled.div`
+  display: flex;
   font-size: 32px;
   color: #1DB954;
   margin-right: 16px;
@@ -26,7 +29,7 @@ export const LogoWrapperStyled = styled.div`
 export const ButtonsSectionStyled = styled.div``;
 
 export const ButtonStyled = styled.button`
-  color: #ffffff;
+  color: ${ textColor };
   text-transform: uppercase;
   font-weight: 600;
   margin-right: 16px;
