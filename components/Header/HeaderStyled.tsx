@@ -43,16 +43,26 @@ export const SectionRightStyled = styled.div`
 `;
 
 export const SearchInputStyled = styled.input`
-  display: flex;
-  align-items: center;
+  border-radius: 16px;
 `;
 
 export const MoreStyled = styled.div`
+  display: flex;
   font-size: 32px;
+  margin-left: 32px;
+  cursor: pointer;
 `;
 
-export const UserInfoStyled = styled.div``;
+export const UserInfoStyled = styled.div`
+  display: flex;
+  align-items: center;
+  margin-left: 32px;
+`;
 
-export const UserPhotoStyled = styled.img``;
+export const UserPhotoStyled = styled.div`
+  display: flex;
+`;
 
-export const UsernameStyled = styled.span``;
+export const UsernameStyled = styled.span`
+  margin-left: 8px;
+`;

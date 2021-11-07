@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import { BsSpotify } from 'react-icons/bs';
 import { FiMoreHorizontal } from 'react-icons/fi'
+import { FaUserCircle } from 'react-icons/fa'
 
 import {
   HeaderWrapperStyled,
@@ -29,12 +30,14 @@ const Header:FC = () => {
         </ButtonsSectionStyled>
       </SectionLeftStyled>
       <SectionRightStyled>
-        <SearchInputStyled />
+        <SearchInputStyled placeholder={'Search'} />
         <MoreStyled>
           <FiMoreHorizontal />
         </MoreStyled>
         <UserInfoStyled>
-          <UserPhotoStyled />
+          <UserPhotoStyled>
+            <FaUserCircle />
+          </UserPhotoStyled>
           <UsernameStyled>pawelacio</UsernameStyled>
         </UserInfoStyled>
       </SectionRightStyled>
