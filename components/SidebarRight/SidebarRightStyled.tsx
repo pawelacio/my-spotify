@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { brandColor, mainColor } from "../../styles/variables";
+import { brandColor, mainColor, textColor } from "../../styles/variables";
 
 interface SidebarRightWrapperStyledPrips {
   isOpened: boolean;
@@ -11,13 +11,19 @@ export const HideSidebarButtonStyled = styled.button`
   align-items: center;
   top: 50%;
   right: 0;
-  height: 32px;
-  width: 32px;
+  height: 48px;
+  width: 48px;
   background-color: ${ brandColor };
+  color: ${ textColor };
   border-radius: 50%;
   transform: translate(40%, 0);
-  font-size: 24px;
+  font-size: 30px;
   cursor: pointer;
+  transition: transform .2s;
+
+  &:hover {
+    transform: translate(40%, 0) scale(1.10);
+  }
 
   svg{
     transform: rotate(0deg);
