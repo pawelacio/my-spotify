@@ -35,7 +35,7 @@ export const HideSidebarButtonStyled = styled.button`
 export const SidebarRightWrapperStyled = styled.div<SidebarRightWrapperStyledPrips>`
   position: relative;
   background-color: ${ mainColor };
-  width: 320px;
+  width: 280px;
   transition: all 0.3s;
   ${props => !props.isOpened && css`
     width: 0px;
@@ -45,8 +45,8 @@ export const SidebarRightWrapperStyled = styled.div<SidebarRightWrapperStyledPri
       }
     }
   `};
+`;
 
-  /* left: ${
-    (props) => (props.isOpened ? '240px' : '0px')
-  }; */
+export const SidebarContent = styled.div`
+  position: relative;
 `;

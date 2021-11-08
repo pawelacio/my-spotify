@@ -1,9 +1,11 @@
 import { MouseEvent, useState, useEffect } from "react";
 import { HiChevronRight } from 'react-icons/hi'
+import FriendActivity from "../FriendActivity";
 
 import {
   SidebarRightWrapperStyled,
   HideSidebarButtonStyled,
+  SidebarContent
 } from './SidebarRightStyled';
 
 const SidebarRight = () => {
@@ -24,6 +26,9 @@ const SidebarRight = () => {
 
   return (
     <SidebarRightWrapperStyled isOpened={opened} >
+      <SidebarContent>
+        <FriendActivity />
+      </SidebarContent>
       <HideSidebarButtonStyled>
         <HiChevronRight onClick={() => onHideButtonClick()} />
       </HideSidebarButtonStyled>
