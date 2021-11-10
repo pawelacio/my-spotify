@@ -1,7 +1,8 @@
-import { FriendActivityStyled, HeaderStyled, FriendListWrapperStyled, FriendListItemStyled, FriendImageStyled, FriendLastPlayedStyled, FriendNameStyled, SongNameStyled, AlbumNameStyled, LastSeenStyled, SongArtistStyled, PlaylistNameStyled, IconStyled } from "./FriendActivityStyled";
+import { FriendActivityStyled, HeaderStyled, FriendListWrapperStyled, FriendListItemStyled, FriendImageStyled, FriendLastPlayedStyled, FriendNameStyled, SongNameStyled, AlbumNameStyled, LastSeenStyled, SongArtistStyled, PlaylistNameStyled, IconStyled, ButtonWrapperStyled } from "./FriendActivityStyled";
 import { FaUserCircle } from 'react-icons/fa'
 import { CgMusic } from 'react-icons/cg';
 import { RiAlbumLine } from 'react-icons/ri'
+import Button from "../Button";
 
 const FriendList = [
   {
@@ -39,6 +40,10 @@ const FriendList = [
   }
 ];
 
+const findFriends = () : void => {
+  console.log('findFriends function');
+}
+
 const FriendActivity = () => {
   return (
     <FriendActivityStyled>
@@ -75,6 +80,9 @@ const FriendActivity = () => {
             </FriendListItemStyled>
           )
         })}
+        <ButtonWrapperStyled>
+          <Button onClickFunction={() => findFriends()}>Find Friends</Button>
+        </ButtonWrapperStyled>
       </FriendListWrapperStyled>
     </FriendActivityStyled>
   )

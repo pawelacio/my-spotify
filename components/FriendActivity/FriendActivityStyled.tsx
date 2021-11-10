@@ -33,7 +33,7 @@ export const FriendLastPlayedStyled = styled.div`
 `;
 
 export const FriendNameStyled = styled.div`
-  font-size: 20px;
+  font-size: 18px;
 
   &:hover {
     cursor: pointer;
@@ -42,7 +42,7 @@ export const FriendNameStyled = styled.div`
 `;
 
 export const SongNameStyled = styled.div`
-  font-size: 12px;
+  font-size: 10px;
 
   &:hover {
     cursor: pointer;
@@ -51,7 +51,7 @@ export const SongNameStyled = styled.div`
 `;
 
 export const SongArtistStyled = styled.div`
-  font-size: 12px;
+  font-size: 10px;
   margin-bottom: 8px;
 
   &:hover {
@@ -63,7 +63,7 @@ export const SongArtistStyled = styled.div`
 export const AlbumNameStyled = styled.div`
   display: flex;
   align-items: center;
-  font-size: 12px;
+  font-size: 10px;
 
   &:hover {
     cursor: pointer;
@@ -74,7 +74,7 @@ export const AlbumNameStyled = styled.div`
 export const PlaylistNameStyled = styled.div`
   display: flex;
   align-items: center;
-  font-size: 12px;
+  font-size: 10px;
 
   &:hover {
     cursor: pointer;
@@ -85,9 +85,15 @@ export const PlaylistNameStyled = styled.div`
 export const IconStyled = styled.div`
   display: flex;
   font-size: 16px;
-  margin-right: 8px;
+  margin-right: 4px;
 `;
 
 export const LastSeenStyled = styled.div`
   font-size: 12px;
+  margin-top: 4px;
+`;
+
+export const ButtonWrapperStyled = styled.div`
+  margin-top: 64px;
+  text-align: center;
 `;

@@ -4,7 +4,7 @@ import { mainColor, textColor } from "../../styles/variables";
 export const HeaderWrapperStyled = styled.header`
   position: relative;
   height: 100px;
-  padding: 32px 48px 32px 32px;
+  padding: 32px 128px 32px 64px;
   background-color: ${ mainColor };
   display: flex;
   justify-content: space-between;
@@ -61,6 +61,7 @@ export const UserInfoStyled = styled.div`
 
 export const UserPhotoStyled = styled.div`
   display: flex;
+  font-size: 24px;
 `;
 
 export const UsernameStyled = styled.span`
