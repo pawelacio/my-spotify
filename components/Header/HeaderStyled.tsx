@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { mainColor, textColor } from "../../styles/variables";
+import { mainColor, secondaryColor, textColor } from "../../styles/variables";
 
 export const HeaderWrapperStyled = styled.header`
   position: relative;
   height: 100px;
   padding: 32px 128px 32px 64px;
-  background-color: ${ mainColor };
+  background-color: ${ secondaryColor };
   display: flex;
   justify-content: space-between;
   align-items: center;

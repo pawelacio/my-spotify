@@ -1,9 +1,11 @@
+import { FC } from 'react';
+import ArtistPage from '../ArtistPage';
 import { ContentWrapperStyled } from './ContentStyled';
 
-const Content = () => {
+const Content: FC = () => {
   return (
     <ContentWrapperStyled>
-      Content
+      <ArtistPage />
     </ContentWrapperStyled>
   )
 }

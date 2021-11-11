@@ -1,8 +1,13 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { textColor } from "../../styles/variables";
 
-export const ButtonStyled = styled.button`
-  padding: 8px 32px;
+interface ButtonStyledProps {
+  isSquare: boolean;
+  isSmall: boolean;
+}
+
+export const ButtonStyled = styled.button<ButtonStyledProps>`
+  padding: 4px 32px;
   border: 1px solid ${ textColor };
   border-radius: 32px;
   font-size: 14px;
@@ -10,6 +15,15 @@ export const ButtonStyled = styled.button`
   color: ${ textColor };
   background-color: transparent;
   text-transform: uppercase;
+
+  ${ props => props.isSmall && css`
+    padding: 2px 8px;
+    font-size: 10px;
+  `}
+
+  ${ props => props.isSquare && css`
+    border-radius: 2px;
+  `}
 
   &:hover {
     cursor: pointer;

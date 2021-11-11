@@ -8,7 +8,7 @@ import Content from '../Content'
 export const Container:FC = () => {
   return (
     <ContainerWrapperStyled>
-      <SidebarLeft />
+      {/* <SidebarLeft /> */}
       <Content />
       <SidebarRight />
     </ContainerWrapperStyled>
