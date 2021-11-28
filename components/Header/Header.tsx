@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { BsSpotify } from 'react-icons/bs';
-import { FiMoreHorizontal } from 'react-icons/fi'
+import { FiMoreHorizontal, FiSearch } from 'react-icons/fi'
 import { FaUserCircle } from 'react-icons/fa'
 
 import {
@@ -10,12 +10,12 @@ import {
   ButtonsSectionStyled,
   ButtonStyled,
   SectionRightStyled,
-  SearchInputStyled,
   MoreStyled,
   UserInfoStyled,
   UserPhotoStyled,
   UsernameStyled
 } from './HeaderStyled';
+import Input from '../Input';
 
 const Header:FC = () => {
   return (
@@ -30,7 +30,7 @@ const Header:FC = () => {
         </ButtonsSectionStyled>
       </SectionLeftStyled>
       <SectionRightStyled>
-        <SearchInputStyled placeholder={'Search'} />
+        <Input placeholder="Search" icon={FiSearch} />
         <MoreStyled>
           <FiMoreHorizontal />
         </MoreStyled>
