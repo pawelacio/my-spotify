@@ -1,10 +1,14 @@
 import Image from 'next/image'
+import { useSpring } from 'react-spring';
 import { AlbumDescriptionStyled, AlbumNameStyled, AlbumNameWrapperStyled, AlbumRateStyled, ArtistInfoStyled, ArtistPageWrapperStyled, ArtistPhotoOverlayStyled, ArtistBackgroundStyled, RatingStarStyled, ArtistPhotoOverlayStyled2, ArtistContentStyled, UpgradeButtonWrapperStyled } from "./ArtistPageStyled"
 import { AiFillStar } from 'react-icons/ai';
-import artistPhoto from '../../public/sia-photo.jpg'
+import artistPhoto from '../../public/sia-photo-2.png'
 import Button from '../Button';
 
 const ArtistPage = () => {
+  const artistContentAnimation = useSpring({ to: { top: 0 }, from: { top: 200 }, delay: 200  })
+  const artistPhotoAnimation = useSpring({ to: { background: 'rgba(44, 47, 52, 0.6)'}, from: { background: 'rgba(44, 47, 52, 1)'}, delay: 200 });
+
   const rate = 4;
 
   return (
@@ -14,12 +18,12 @@ const ArtistPage = () => {
           src={artistPhoto}
           alt="Sia"
           layout="fill"
-          objectFit="cover"
+          objectFit="contain"
         />
-        <ArtistPhotoOverlayStyled />
+        <ArtistPhotoOverlayStyled style={artistPhotoAnimation} />
         <ArtistPhotoOverlayStyled2 />
       </ArtistBackgroundStyled>
-      <ArtistContentStyled>
+      <ArtistContentStyled style={artistContentAnimation}>
         <UpgradeButtonWrapperStyled>
           <Button
             onClickFunction={() => console.log('upgrade')}
